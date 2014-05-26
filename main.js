@@ -7,7 +7,8 @@ var Appointment = Backbone.Model.extend({
     $(this.el).html(html);
   }
 });
-var appointment = new Appointment();
+var appointment = new Appointment({description: 'My backbone hurts'});
+appointment.set({title: 'Go to Doctor'});
 var AppointmentView = Backbone.View.extend({});
 var appointmentView = new AppointmentView({model: appointment});
 
