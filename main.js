@@ -12,3 +12,5 @@ appointment.set({title: 'Go to Doctor'});
 var AppointmentView = Backbone.View.extend({});
 var appointmentView = new AppointmentView({model: appointment});
 
+appointmentView.render();
+$('#app').html(appointmentView.el);
