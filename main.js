@@ -2,6 +2,10 @@
  * Created by andrewbrassington on 5/22/14.
  */
 var Appointment = Backbone.Model.extend({
+  defaults: {
+    title: 'Checkup',
+    date: new Date()
+  },
   render: function() {
     var html = '<li>' + this.model.get('title') + '</li>';
     $(this.el).html(html);
