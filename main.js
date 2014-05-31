@@ -3,6 +3,7 @@
  */
 
 var Appointment = Backbone.Model.extend({
+    urlRoot: '/appointments',
     defaults: function() {
       return {
         title: 'Checkup',
@@ -24,3 +25,6 @@ var appointmentView = new AppointmentView({model: appointment});
 
 appointmentView.render();
 $('#app').html(appointmentView.el);
+
+var appointment2 = new Appointment({id: 1});
+appointment2.fetch();
