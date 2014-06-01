@@ -28,3 +28,5 @@ $('#app').html(appointmentView.el);
 
 var appointment2 = new Appointment({id: 1});
 appointment2.fetch();
+appointment2.set({cancelled: true});
+appointment2.save();
