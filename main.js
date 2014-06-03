@@ -30,6 +30,6 @@ var appointment2 = new Appointment({id: 1});
 appointment2.fetch();
 appointment2.set({cancelled: true});
 appointment2.save();
-appointment2.on('change', function() {
+appointment2.on('change:cancelled', function() {
   alert('Hey Dr. Goodparts, your appointment was cancelled!');
 });
