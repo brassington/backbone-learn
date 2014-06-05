@@ -34,5 +34,7 @@ appointment2.on('change:cancelled', function() {
   alert('Hey Dr. Goodparts, your appointment was cancelled!');
 });
 
+
+
 console.log(appointment2.toJSON());
 
